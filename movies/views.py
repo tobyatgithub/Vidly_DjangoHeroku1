@@ -6,4 +6,4 @@ from .models import Movie
 def index(request):
     movies = Movie.objects.all()
     # we pass data throught context arg
-    return render(request, 'index.html', context={'movies': movies}) 
+    return render(request, 'movies/index.html', context={'movies': movies}) 
