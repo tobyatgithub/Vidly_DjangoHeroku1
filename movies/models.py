@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 class Genre(models.Model):
@@ -11,3 +12,7 @@ class Movie(models.Model):
     daily_rate = models.FloatField()
     genre = models.ForeignKey(Genre, on_delete=models.CASCADE)
     # cacading = if a genre is deleted, than all movies with same genre will be deleted.
+    date_created = models.DateTimeField(default=timezone.now) 
+    # notice we don't call the timezone.now here,bcz if we do, the default will be
+    # hard-coded into the current time (which you can verify in the migration file 
+    # if you try)
