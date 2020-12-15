@@ -9,4 +9,6 @@ def index(request):
     return render(request, 'movies/index.html', context={'movies': movies}) 
 
 def detail(request, movie_id):
-    return HttpResponse(movie_id)
+    movie = Movie.objects.get(id=movie_id)
+    
+    return render(request, 'movies/detail.html', context={'movie': movie})
