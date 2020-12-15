@@ -7,4 +7,4 @@ class MovieResource(ModelResource):
     class Meta:
         queryset = Movie.objects.all() # lazy loading, only returns a query
         resource_name = 'movies' # ...website/api/<resource_name>
-
+        excludes = ['date_created'] # hide attributes
