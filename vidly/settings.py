@@ -27,6 +27,7 @@ SECRET_KEY = '^#l2x4gi0xoa0t#5&xaq)d#g6gfp$$a_#l7o_hhwg0-*jd_)!r'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
     'aqueous-shelf-26256.herokuapp.com',
 ]
 
