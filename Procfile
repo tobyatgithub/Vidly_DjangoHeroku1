@@ -1,2 +1,1 @@
-web: gunicorn vidly.wsgi
- 
+web: gunicorn vidly.wsgi --log-file - 
