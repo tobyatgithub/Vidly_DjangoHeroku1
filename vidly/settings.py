@@ -26,7 +26,9 @@ SECRET_KEY = '^#l2x4gi0xoa0t#5&xaq)d#g6gfp$$a_#l7o_hhwg0-*jd_)!r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'aqueous-shelf-26256.herokuapp.com',
+]
 
 
 # Application definition
